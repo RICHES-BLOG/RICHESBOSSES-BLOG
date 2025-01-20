@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RICHES-BLOG MUSIC</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<link rel="icon" type="image/x-icon" href="favicon.jpg">
+</head>
+<body>
+	<header>
+		<nav>
+    <ul>
+      <li><a href="Richesblogweb.html"><i class="fas fa-home"></i>Home</a> </li>
+	    <li><a href="Music.html"class="active"><i class="fa fa-music"></i>Music</a></li>
+		 <li><a href="video.html"><i class="fa fa-film"></i>Movies</a></li>
+		 <li><a href="story.html"><i class="fas fa-pen-nib"></i>Stories</a></li>
+      <li><a href="about.html"><i class="fas fa-user"></i>About</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+    </ul>
+  </nav>
+
+<div class="nav-menu">
+  <div class="nav-lines">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="Richesblogweb.html"class="active"><i class="fas fa-home"></i>Home</a> </li>
+	  <li><a href="Music.html"><i class="fa fa-music"></i>Music</a></li>
+	  . <li><a href="video.html"><i class="fa fa-film"></i>Movies</a></li>
+	  <li><a href="story.html"><i class="fas fa-pen-nib"></i>Stories</a></li>
+      <li><a href="about.html"><i class="fas fa-user"></i>About</a></li>
+      <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact</a></li>
+  </ul>
+</div>
+	</header>
+	<!-- Main Section -->
+	<main>
+	
+	<div class="music-categories">
+  <h2>Music Categories</h2>
+  <div class="categories">
+    <a href="#">International Music</a>
+    <a href="#">Naija Music</a>
+    <a href="#">Ghana Music</a>
+    <a href="#">Trending Music</a>
+    <a href="#">New Releases</a>
+    <a href="#">Afrobeats</a>
+    <a href="#">Hip-Hop/Rap</a>
+    <a href="#">R&B/Soul</a>
+    <a href="#">Electronic/Dance</a>
+  </div>
+</div>
+
+
+
+	
+	
+	<!--...-->
+	
+<h1>Music</h1>
+
+<div class="music-player">
+<div class="music-cover">
+<img src="cover.jpg" alt="Music Cover">
+</div>
+<div class="music-info">
+<h2>My People</h2>
+<p>Blaq Symbol</p>
+</div>
+<div class="music-controls">
+<button class="play-pause-button">Play/Pause</button>
+<button class="download-button">Download</button>
+</div>
+<audio id="music-audio" src="Blaq_Symbol_-_My_People_(RichesBosses.com)_.mp3"></audio>
+</div>
+<script>
+const playPauseButton = document.querySelector('.play-pause-button');
+const downloadButton = document.querySelector('.download-button');
+const musicAudio = document.getElementById('music-audio');
+
+playPauseButton.addEventListener('click', () => {
+if (musicAudio.paused) {
+musicAudio.play();
+playPauseButton.textContent = 'Pause';
+} else {
+musicAudio.pause();
+playPauseButton.textContent = 'Play';
+}
+});
+
+downloadButton.addEventListener('click', () => {
+const musicUrl = musicAudio.src;
+const a = document.createElement('a');
+a.href = musicUrl;
+a.download = 'Blaq_Symbol_-_My_People_(RichesBosses.com)_.mp3';
+a.click();
+});
+</script>
+</main>
+
+<!-- Footer Section -->
+	<footer>
+		<!-- ... -->
+<ul class="social-media-links">
+<li><a href="https://www.x.com/am_deejay_alex" target="_blank"><i class="fab fa-twitter"></i>X</a></li>
+<li><a href="https://www.facebook.com/richesbosseswealthy" target="_blank"><i class="fab fa-facebook"></i>Facebook</a></li>
+<li><a href="https://www.instagram.com/richesbosses" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></li>
+<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+</ul>
+<p>&copy; 2025 Riches Bosses Blog. All rights reserved.</p>
+	</footer>
+	
+</body>
+</html>

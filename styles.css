@@ -816,3 +816,22 @@ font-size: 16px;
 color: #666;
 margin-top: 10px;
 }
+
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #333;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+#scroll-to-top:hover {
+  background-color: #f2f2f2;
+}
+
